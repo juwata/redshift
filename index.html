@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
   <link rel="stylesheet" href="style.css">
   <title>Redshift</title>
 </head>
-
 <body>
   <div class="container">
 
@@ -18,26 +16,33 @@
         <p>Veja como o efeito acontece nas estrelas!</p>
       </section>
     </div>
-    
+
     <div class="stars" id="stars"></div>
 
     <main>
-        <div class="form-box">
-          <div><label for="hubble">Constante de Hubble H₀</label><input type="number" id="hubble" value="70" min="1" step="1" placeholder="km/s / Mpc:"></div>
-          <div><label for="distance">Distância da estrela:</label><input type="number" id="distance" value="100" min="-1000" step="1" placeholder="Mpc"></div>
-          <button id="calc">Calcular</button>
-          <div class="result" id="result"></div>
+      <div class="form-box">
+        <div>
+          <label for="hubble">Constante de Hubble H₀</label>
+          <input type="number" id="hubble" value="70" min="1" step="1" placeholder="km/s / Mpc">
         </div>
-        <div class="star-box">
-          <div class="star" id="star"></div>
-          <div class="caption">A cor reflete o desvio para o vermelho (z)</div>
+
+        <div>
+          <label for="distance">Distância da estrela:</label>
+          <input type="number" id="distance" value="100" min="-1000" step="1" placeholder="Mpc">
         </div>
+
+        <button id="calc">Calcular</button>
+        <div class="result" id="result"></div>
+      </div>
+
+      <div class="star-box">
+        <div class="star" id="star"></div>
+        <div class="caption">A cor reflete o desvio para o vermelho (z)</div>
+      </div>
     </main>
 
   </div>
 
-
   <script src="script.js"></script>
 </body>
-
 </html>
